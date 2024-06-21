@@ -351,7 +351,7 @@ class Div(BinaryOperator):
         )
     
     def derivative_scheme(self, arg0, arg1):
-        return (arg0 * self.args[1] - self.args[0] * arg1) / arg1 ** 2
+        return (arg0 * self.args[1] - self.args[0] * arg1) / self.args[1] ** 2
 
 
 class Pow(BinaryOperator):
